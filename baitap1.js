@@ -4,15 +4,16 @@ function checkSNT(n) {
     }
         
     for (var i = 2; i < n; i++) {
-        if (n % i == 0)
+        if (n % i == 0) {
             return false;
+        }
     }
 
     return true;
 }
 
 function baitap1() {
-    var n = document.getElementById("soBatKy").value*1;
+    var n = +document.getElementById("soBatKy").value;
     var result = "";
     for (var i = 2; i <= n; i++) {
         if (checkSNT(i)) {
